@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./1.js">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+   
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +18,24 @@
             <label for="yes" >是</label>
             <tr>
                 <th>
-                <button type="submit">確定</button>
+                <button type="submit" class="hundred">確定</button>
                 </th>
             </tr>
     </table>
+    <p style="display: none;"><img src="./100分.jfif" alt="100分" class="hundred"></p>
+    <button>掉</button>
+    <p>想看到100分跟宅學習嗎</p>
+    <p style="display: none">不想就按掉</p>
+
+    <script>
+        $(function(){
+            /*$("body").addClass("animated fadeOut");
+            $('.hundred').fadeOut(3000);*/
+            $('p').show();
+            $('button').click(function() {
+                $('p').toggle();
+                    });
+        })
+      </script>
 </body>
 </html>
